@@ -17,7 +17,7 @@ pipeline {
 
         stage("Deploy") {
             steps {
-                sh 'docker run -d --name hello-world-container -p 8080:80 hello-world-app'
+                sh 'docker run -d --name hello-world-container -p 8081:80 hello-world-app'
             }
         }
     }
