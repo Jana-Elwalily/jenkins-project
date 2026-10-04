@@ -1,5 +1,5 @@
-FROM nginx:alpine
+FROM php:8.4-apache
 
-COPY index.html /usr/share/nginx/html/index.html
+COPY index.php /var/www/html/index.php
 
 EXPOSE 80
